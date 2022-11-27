@@ -8,6 +8,7 @@ class ListingForm(ModelForm):
         fields = [
             "title",
             "price",
+            "image",
             "num_bedrooms",
             "num_bathrooms",
             "square_footage",
