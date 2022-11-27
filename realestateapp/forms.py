@@ -2,14 +2,14 @@ from django.forms import ModelForm
 from .models import Listing
 
 
-class listingForm(ModelForm):
+class ListingForm(ModelForm):
     class Meta:
         model = Listing
         fields = [
             "title",
             "price",
-            "numbers_of_bedrooms",
-            "numbers_of_bathrooms",
+            "num_bedrooms",
+            "num_bathrooms",
             "square_footage",
             "address",
         ]
