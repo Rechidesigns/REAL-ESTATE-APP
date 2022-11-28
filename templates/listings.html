@@ -2,17 +2,23 @@
 
 {% block content %}
 
-<a href="/add-listing/" class="text-blue-500">Create a new listing</a>
+<center>
+
+    <a href="/add-listing/" class="text-blue-500">Create a new listing</a>
+
+</center>
 
 {% for listing in listings %}
 
-<div class="mt-2 px-3 py-2 bg-gray-100 rounded-sm">
-    <h3 class="text-3xl text-gray-900">{{ listing.title }}</h3>
-    <img src="{{ listing.image.url }}" alt=""/>
-    <a href="/listings/{{ listing.id }}/" class="text-blue-500">
-        View details
-    </a>
-</div>
+<center>
+    <div class="mt-2 px-3 py-2 bg-purple-100 rounded-sm">
+        <h3 class="text-3xl text-gray-900">{{ listing.title }}</h3>
+        <img src="{{ listing.image.url }}" alt=""/>
+        <a href="/listings/{{ listing.id }}/" class="text-blue-500">
+            View details
+        </a>
+    </div>
+</center>
 
 {% endfor %}
 
