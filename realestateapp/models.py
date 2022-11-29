@@ -16,4 +16,12 @@ class Listing(models.Model):
         return self.title
  
 class Lands(models.Model):
-    return pass
+    title = models.CharField(max_length=150)
+    c_o_t = models.BooleanField()
+    location = models.Charfield(max_length=50)
+    price = models.IntegerField()
+    image = models.ImageField(default=False)
+    plots = models.IntegerField()
+    
+    def __str__(self):
+        return self.title
